@@ -1,7 +1,25 @@
 aid: gbatteries
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/gbatteries.png
 name: Gbatteries
-description: Gbatteries is a company surfaced as a portfolio company of y-combinator and added to the
-  API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: GBatteries (GBatteries Energy Canada Inc.) is an Ottawa, Ontario battery technology
+  company developing lithium-metal battery cells and an intelligent, adaptive battery management
+  system for the next generation of electric mobility, from land to air. Its technology targets
+  fast charging (sub-15-minute charge), high energy density (450+ Wh/kg), extended cycle life,
+  and enhanced safety by actively reducing irreversible internal cell damage. The company reports
+  60+ granted or pending patents and 9+ years of R&D, and was surfaced as a Y Combinator portfolio
+  company. GBatteries is a hardware and battery-management deeptech firm; it publishes no public
+  developer API, SDK, or developer portal.
 url: https://raw.githubusercontent.com/api-evangelist/gbatteries/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,12 +29,32 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
+- Batteries
+- Energy Storage
+- Electric Mobility
+- Battery Management
+- Fast Charging
+- Lithium Metal
+- Deeptech
+- Hardware
 apis: []
+common:
+- type: DomainSecurity
+  url: security/gbatteries-domain-security.yml
+- type: Website
+  url: https://www.gbatteries.com/
+- type: PrivacyPolicy
+  url: https://www.gbatteries.com/legal
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
